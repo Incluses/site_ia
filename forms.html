@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Pesquisa</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2e7fe; /* Fundo roxo pastel */
+        color: #4b3b6b; /* Cor do texto */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Altera para 100vh para ocupar toda a tela */
+        margin: 0;
+        padding: 20px; /* Adiciona um pouco de padding ao redor do conteúdo */
+        overflow: auto; /* Permite rolagem se necessário */
+      }
+
+      form {
+        background-color: white; /* Fundo branco do formulário */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+        width: 100%; /* Largura total do formulário */
+        max-width: 800px; /* Largura máxima do formulário */
+        overflow: auto; /* Permite rolagem no formulário */
+        max-height: 90vh; /* Limita a altura do formulário */
+      }
+
+      h1 {
+        text-align: center; /* Centraliza o título do formulário */
+        margin-bottom: 20px; /* Espaço abaixo do título */
+      }
+
+      h2 {
+        font-size: 1.4em; /* Tamanho do título das perguntas */
+        margin-bottom: 10px; /* Espaço abaixo do título */
+      }
+
+      label {
+        display: block;
+        margin-bottom: 15px; /* Espaço abaixo do rótulo */
+        cursor: pointer; /* Cursor em forma de mão ao passar sobre o rótulo */
+        transition: color 0.3s; /* Transição suave ao passar o mouse */
+      }
+
+      label:hover {
+        color: #ae00ff; /* Cor do texto ao passar o mouse */
+      }
+
+      input[type="radio"] {
+        margin-right: 10px; /* Espaço entre o botão de rádio e o texto */
+      }
+
+      button {
+        background-color: #ae00ff; /* Cor do botão */
+        color: white; /* Cor do texto do botão */
+        border: none; /* Remover borda padrão */
+        border-radius: 5px; /* Bordas arredondadas */
+        padding: 12px; /* Espaçamento interno do botão */
+        cursor: pointer; /* Cursor em forma de mão */
+        transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+        width: 100%; /* Largura total do botão */
+        margin-top: 20px; /* Espaço acima do botão */
+        font-size: 1.1em; /* Tamanho do texto do botão */
+      }
+
+      button:hover {
+        background-color: #006aff; /* Cor do botão ao passar o mouse */
+      }
+
+      .container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Estilo de foco para botões e inputs */
+      input[type="radio"]:focus,
+      button:focus {
+        outline: 2px solid #4b3b6b; /* Cor do contorno ao focar */
+        outline-offset: 2px; /* Espaço do contorno */
+      }
+    </style>
+  </head>
+  <body>
+    <form id="usageForm">
+      <h1 id="form-title">Formulário de Pesquisa</h1>
+
+      <h2>1. Você participa da comunidade LGBTQIA+?</h2>
+      <label
+        ><input type="radio" name="comunidade" value="Sim" required />
+        Sim</label
+      >
+      <label
+        ><input type="radio" name="comunidade" value="Não" required />
+        Não</label
+      >
+
+      <h2>2. Idade:</h2>
+      <label
+        ><input type="radio" name="faixa_etaria" value="Menos de 18 anos" required /> Menos de
+        18 anos</label
+      >
+      <label
+        ><input type="radio" name="faixa_etaria" value="18-24 anos" required /> 18-24
+        anos</label
+      >
+      <label
+        ><input type="radio" name="faixa_etaria" value="25-34 anos" required /> 25-34
+        anos</label
+      >
+      <label
+        ><input type="radio" name="faixa_etaria" value="35-44 anos" required /> 35-44
+        anos</label
+      >
+      <label
+        ><input type="radio" name="faixa_etaria" value="45-54 anos" required /> 45-54
+        anos</label
+      >
+      <label
+        ><input type="radio" name="faixa_etaria" value="55 anos ou mais" required /> 55 anos
+        ou mais</label
+      >
+
+      <h2>3. Gênero:</h2>
+      <label
+        ><input type="radio" name="identidade_genero" value="Mulher cisgênero" required />
+        Mulher cisgênero</label
+      >
+      <label
+        ><input type="radio" name="identidade_genero" value="Homem cisgênero" required />
+        Homem cisgênero</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="identidade_genero"
+          value="Mulher transgênero"
+          required
+        />
+        Mulher transgênero</label
+      >
+      <label
+        ><input type="radio" name="identidade_genero" value="Homem transgênero" required />
+        Homem transgênero</label
+      >
+      <label
+        ><input type="radio" name="identidade_genero" value="Não-binário" required />
+        Não-binário</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="identidade_genero"
+          value="Prefiro não informar"
+          required
+        />
+        Prefiro não informar</label
+      >
+      <label
+        ><input type="radio" name="identidade_genero" value="Outra" required />
+        Outra</label
+      >
+
+      <h2>4. Orientação Sexual:</h2>
+      <label
+        ><input type="radio" name="orientacao_sexual" value="Heterossexual" required />
+        Heterossexual</label
+      >
+      <label
+        ><input type="radio" name="orientacao_sexual" value="Homossexual" required />
+        Homossexual</label
+      >
+      <label
+        ><input type="radio" name="orientacao_sexual" value="Bissexual" required />
+        Bissexual</label
+      >
+      <label
+        ><input type="radio" name="orientacao_sexual" value="Assexual" required />
+        Assexual</label
+      >
+      <label
+        ><input type="radio" name="orientacao_sexual" value="Pansexual" required />
+        Pansexual</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="orientacao_sexual"
+          value="Prefiro não informar"
+          required
+        />
+        Prefiro não informar</label
+      >
+      <label
+        ><input type="radio" name="orientacao_sexual" value="Outra" required />
+        Outra</label
+      >
+
+      <h2>5. Localização:</h2>
+      <label
+        ><input type="radio" name="cidade_estado" value="Região Norte" required /> Região
+        Norte</label
+      >
+      <label
+        ><input type="radio" name="cidade_estado" value="Região Nordeste" required />
+        Região Nordeste</label
+      >
+      <label
+        ><input type="radio" name="cidade_estado" value="Região Centro-Oeste" required />
+        Região Centro-Oeste</label
+      >
+      <label
+        ><input type="radio" name="cidade_estado" value="Região Sudeste" required />
+        Região Sudeste</label
+      >
+      <label
+        ><input type="radio" name="cidade_estado" value="Região Sul" required /> Região
+        Sul</label
+      >
+
+      <h2>6. Nível de Escolaridade:</h2>
+      <label
+        ><input type="radio" name="escolaridade" value="Ensino Fundamental completo ou cursando" required />
+        Ensino Fundamental completo ou cursando</label
+      >
+      <label
+        ><input type="radio" name="escolaridade" value="Ensino Médio completo ou cursando" required />
+        Ensino Médio completo ou cursando</label
+      >
+      <label
+        ><input type="radio" name="escolaridade" value="Ensino Superior completo ou cursando" required />
+        Ensino Superior completo ou cursando</label
+      >
+      <label
+        ><input type="radio" name="escolaridade" value="Nenhum" required />
+        Nenhum</label
+      >
+
+      <h2>7. Você usa aplicativos para procurar oportunidades de emprego?</h2>
+      <label
+        ><input type="radio" name="usa_apps_emprego" value="Sim" required />
+        Sim</label
+      >
+      <label
+        ><input type="radio" name="usa_apps_emprego" value="Não" required />
+        Não</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="usa_apps_emprego"
+          value="Tenho interesse"
+          required
+        />
+        Tenho interesse</label
+      >
+
+      <h2>8. Preferência por Cursos:</h2>
+      <label
+        ><input
+          type="radio"
+          name="preferencia_cursos"
+          value="Prefiro cursos on-line"
+          required
+        />
+        Prefiro cursos on-line</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="preferencia_cursos"
+          value="Prefiro cursos presenciais"
+          required
+        />
+        Prefiro cursos presenciais</label
+      >
+      <label
+        ><input type="radio" name="preferencia_cursos" value="Não tenho preferência, pode ser on-line ou presencial" required />
+        Não tenho preferência, pode ser on-line ou presencial</label
+      >
+
+      <h2>
+        9. Você já sentiu desafios para entrar no mercado de trabalho devido ao
+        seu gênero?
+      </h2>
+      <label
+        ><input type="radio" name="desafios_emprego_genero" value="Sim" required />
+        Sim</label
+      >
+      <label
+        ><input type="radio" name="desafios_emprego_genero" value="Não" required />
+        Não</label
+      >
+
+      <h2>10. Você tem interesse em empreender?</h2>
+      <label
+        ><input type="radio" name="interesse_empreender" value="Sim" required />
+        Sim</label
+      >
+      <label
+        ><input type="radio" name="interesse_empreender" value="Não" required />
+        Não</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="interesse_empreender"
+          value="Talvez"
+          required
+        />
+        Talvez</label
+      >
+
+      <h2>11. Qual é a sua situação diante do mercado de trabalho?</h2>
+      <label
+        ><input
+          type="radio"
+          name="situacao_mercado_trabalho"
+          value="Desempregado (a)"
+          required
+        />
+        Desempregado (a)</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="situacao_mercado_trabalho"
+          value="Empregado (a)"
+          required
+        />
+        Empregado (a)</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="situacao_mercado_trabalho"
+          value="Autônomo (a)"
+          required
+        />
+        Autônomo (a)</label
+      >
+
+      <h2>
+        12. Você usa redes sociais (exemplo: X, Facebook, Instagram, YouTube)?
+      </h2>
+      <label
+        ><input type="radio" name="usa_redes_sociais" value="Sim" required />
+        Sim</label
+      >
+      <label
+        ><input type="radio" name="usa_redes_sociais" value="Não" required />
+        Não</label
+      >
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="response">
+      <div id="responseContent"></div>
+  </div>
+  <script>
+    document.getElementById('usageForm').addEventListener('submit', async (event) => {
+        event.preventDefault(); // Impede o envio padrão do formulário
+
+        // Coleta os dados do formulário
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('http://localhost:5980/would-use-app', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok'); // Lança um erro se a resposta não for ok
+            }
+
+            const result = await response.text(); // Mudança para text()
+
+            // Exibe a resposta
+            const responseDiv = document.getElementById('response');
+            const responseContent = document.getElementById('responseContent');
+
+            responseContent.innerHTML = result; // Insere HTML ao invés de texto
+            responseDiv.style.display = 'block'; // Torna o div visível
+
+            // Oculta o formulário
+            document.getElementById('usageForm').style.display = 'none';
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    });
+</script>
+  
+</body>
+</html>

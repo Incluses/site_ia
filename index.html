@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Exemplo - Incluses</title>
+    <style>
+        /* Estilo do corpo da página */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2e7fe; /* Fundo roxo pastel */
+            color: #c300ff; /* Cor do texto em tom roxo escuro */
+            position: relative;
+        }
+
+        /* Estilo do título */
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #ae00ff;
+        }
+
+        /* Estilo do quadrado central */
+        .quadrado {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #c300ff; /* Tom roxo claro pastel */
+            color: #f3f3f3;
+            display: flex;
+            flex-direction: column; /* Alinha os itens verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            font-size: 1em;
+            text-align: center; /* Alinhamento central do texto */
+            line-height: 1.5;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            position: relative; /* Para o posicionamento do abacaxi */
+        }
+
+        /* Estilo do botão */
+        .botao {
+            margin-top: 20px; /* Espaço acima do botão */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            background-color: #ae00ff; /* Cor do botão */
+            color: white; /* Cor do texto no botão */
+            border: none; /* Remover borda padrão */
+            border-radius: 5px; /* Bordas arredondadas */
+            font-size: 1em; /* Tamanho do texto */
+            cursor: pointer; /* Cursor em forma de mão */
+            text-decoration: none; /* Remover sublinhado */
+            transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+        }
+
+        .botao:hover {
+            background-color: #c300ff; /* Cor do botão ao passar o mouse */
+        }
+
+        /* Logo no canto superior direito */
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px; /* Mantida no canto superior direito */
+            width: 80px;
+            height: 80px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Título da página -->
+    <h1>Sobre o Incluses</h1>
+
+    <!-- Quadrado centralizado com o conteúdo -->
+    <div class="quadrado">
+        É de conhecimento geral que, nos últimos anos, o Brasil traz números cada vez mais preocupantes em relação à taxa de desemprego. 
+        <br>
+        <br>
+        Quando falamos da situação da comunidade LGBTQIA+, os desafios são ainda maiores, uma vez que essas pessoas sofrem diariamente com o preconceito, exclusão, violação de seus direitos e dificuldade de acesso ao mercado de trabalho.
+        <br>
+        <br>
+        Resumidamente, o aplicativo Incluses facilitará o acesso da comunidade LGBTQIA+ ao mercado de trabalho, trazendo uma plataforma a qual relaciona as pessoas da comunidade LGBTQIA+ às empresas. Também, o ambiente virtual trará cursos principalmente sobre empreendedorismo. Assim, o usuário tem apoio para começar o seu próprio negócio.
+
+    </div>
+
+    <!-- Botão para outra página -->
+    <a href="forms.html" class="botao">Iniciar formulário</a>
+
+    <!-- Logo no canto superior direito -->
+    <div class="logo">
+        <img src="logo.png" style="width: 100%; height: 100%; border-radius: 10%;" />
+    </div>
+</body>
+</html>
