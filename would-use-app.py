@@ -125,6 +125,15 @@ def post_would_use_app():
     except ValidationError as e:
         # Se os dados forem inválidos, retornamos um erro
         return jsonify({'error': 'Dados inválidos!', 'details': e.errors()}), 400
+    
+@app.route('/', methods=['GET'])
+def pagina_inicial():
+    return render_template('index.html')
+
+@app.route('/forms')
+def forms():
+    return render_template('forms.html')  # Renderiza o forms.html que deve estar na pasta templates
+
 
 # Inicia o servidor Flask
 if __name__ == '__main__':
