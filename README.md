@@ -41,7 +41,7 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 ```bash
   pip install -r requirements.txt
 ```
-    ## Feito por
+## Feito por
 
 [Luca Almeida Lucareli](https://github.com/LucaLucareli)
 
