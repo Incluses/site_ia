@@ -2,6 +2,5 @@ Flask
 pydantic
 joblib
 pandas
-flask-cors
 pymongo
 python-dotenv
